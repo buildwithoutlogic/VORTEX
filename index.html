@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VORTEX — Intelligent Financial Literacy & Wealth Intelligence</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ================= BACKGROUND LAYERS ================= -->
+
+    <img
+        class="image-gradient"
+        src="gradient.png"
+        alt="Background gradient"
+    >
+
+    <div class="layer-blur"></div>
+
+
+    <!-- ================================================= -->
+    <!--            PUBLIC LANDING PAGE CONTAINER          -->
+    <!-- ================================================= -->
+
+    <div class="container" id="publicContainer">
+
+
+        <!-- ================= PUBLIC HEADER ================= -->
+
+        <header id="publicHeader">
+
+            <!-- LOGO -->
+            <a href="#/" class="logo-link" style="text-decoration:none; color:inherit;">
+                <h1
+                    class="logo"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="1500">
+                    VORTEX
+                </h1>
+            </a>
+
+
+            <!-- PUBLIC NAVIGATION -->
+            <nav id="publicNav">
+
+                <a
+                    href="#/"
+                    class="nav-item active"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="2000">
+                    Home
+                </a>
+
+                <a
+                    href="#/features"
+                    class="nav-item"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="2500">
+                    FEATURES
+                </a>
+
+                <a
+                    href="#/resources"
+                    class="nav-item"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="3000">
+                    RESOURCES
+                </a>
+
+                <a
+                    href="#/research"
+                    class="nav-item"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="3000"
+                    data-aos-delay="3500">
+                    RESEARCH
+                </a>
+
+            </nav>
+
+
+            <!-- PUBLIC AUTH BUTTONS -->
+            <div class="auth-buttons" id="publicAuthButtons">
+
+                <button
+                    type="button"
+                    class="btn-signing"
+                    id="loginBtn">
+                    Login
+                </button>
+
+                <button
+                    type="button"
+                    class="btn-signing-2"
+                    id="signupBtn">
+                    Sign Up
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= MAIN HERO / LANDING CONTENT ================= -->
+
+        <main id="publicMain">
+
+
+            <!-- ================= INTRODUCING ================= -->
+
+            <div class="content">
+
+                <div
+                    class="tag-box"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="1000"
+                    data-aos-delay="1500">
+
+                    <div class="tag">
+                        Introducing
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= VORTEX CALLOUT ================= -->
+
+            <div
+                class="vortex-callout"
+                data-aos="zoom-out-left"
+                data-aos-duration="1500"
+                data-aos-delay="2300">
+
+                <svg viewBox="0 0 500 250">
+
+                    <!-- Callout line -->
+                    <polyline
+                        points="80,200 120,170 120,170 300,170"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="1.5"
+                    />
+
+                    <!-- Circle connected to 3D object -->
+                    <circle
+                        cx="80"
+                        cy="200"
+                        r="4"
+                        fill="black"
+                        stroke="white"
+                        stroke-width="1.5"
+                    />
+
+                    <!-- VORTEX box -->
+                    <rect
+                        x="300"
+                        y="135"
+                        width="150"
+                        height="70"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="1.5"
+                    />
+
+                    <!-- VORTEX text -->
+                    <text
+                        x="375"
+                        y="179"
+                        text-anchor="middle"
+                        fill="white"
+                        font-size="24"
+                        font-family="Arial, sans-serif"
+                        font-weight="600"
+                        letter-spacing="2">
+                        VORTEX
+                    </text>
+
+                </svg>
+
+            </div>
+
+
+
+            <!-- ================= WHAT IS VORTEX ================= -->
+
+            <h2
+                class="what-is"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="2500">
+                What is it exactly
+            </h2>
+
+
+
+            <!-- FIRST DESCRIPTION -->
+
+            <p
+                class="intro-description"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="2700">
+                VORTEX is an intelligent financial-literacy platform designed
+                to help people understand, manage, and improve their financial
+                decisions.
+            </p>
+
+
+
+            <!-- SECOND DESCRIPTION -->
+
+            <p
+                class="intro-description-2"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="2900">
+                It transforms complex financial information into clear,
+                personalized insights helping users understand where their
+                money goes, protect their financial stability, plan meaningful
+                goals, and make informed decisions before they spend.
+            </p>
+
+
+        </main>
+
+
+
+        <!-- ================= 3D VORTEX ANIMATION ================= -->
+
+        <canvas
+            id="vortexCanvas"
+            class="Vortex"
+            data-aos="zoom-out-left"
+            data-aos-duration="1500"
+            data-aos-delay="2200"
+            width="1200"
+            height="1200">
+        </canvas>
+
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            AUTHENTICATED DASHBOARD APPLICATION    -->
+    <!-- ================================================= -->
+
+    <div class="dashboard-app" id="dashboardApp" style="display: none;">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="dash-sidebar" id="dashSidebar">
+
+            <!-- BRAND -->
+            <div class="sidebar-brand">
+                <a href="#/dashboard" class="sidebar-logo">
+                    <span class="logo-dot"></span>
+                    <h2>VORTEX</h2>
+                </a>
+            </div>
+
+            <!-- NAVIGATION LINKS -->
+            <nav class="sidebar-nav">
+                <div class="nav-section-title">FINANCIAL LITERACY</div>
+
+                <a href="#/dashboard" class="sidebar-link active" data-route="overview">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="3" y="3" width="7" height="7" rx="2"></rect>
+                        <rect x="14" y="3" width="7" height="7" rx="2"></rect>
+                        <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+                        <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+                    </svg>
+                    <span>Overview</span>
+                </a>
+
+                <a href="#/dashboard/learn" class="sidebar-link" data-route="learn">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>Learning Path</span>
+                </a>
+
+                <a href="#/dashboard/decision-lab" class="sidebar-link" data-route="decision-lab">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Decision Lab</span>
+                </a>
+
+                <a href="#/dashboard/scenarios" class="sidebar-link" data-route="scenarios">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                    <span>Scenarios</span>
+                </a>
+
+                <a href="#/dashboard/glossary" class="sidebar-link" data-route="glossary">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <span>Glossary</span>
+                </a>
+
+                <a href="#/dashboard/health" class="sidebar-link" data-route="health">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span>Literacy Index</span>
+                </a>
+
+                <a href="#/dashboard/ask-ai" class="sidebar-link" data-route="ask-ai">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>AI Explainer</span>
+                </a>
+
+                <div class="nav-section-title">MY CONTEXT & DATA</div>
+
+                <a href="#/dashboard/finances" class="sidebar-link" data-route="finances">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Financial Context</span>
+                </a>
+
+                <a href="#/dashboard/expenses" class="sidebar-link" data-route="expenses">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <span>Ledger & Expenses</span>
+                </a>
+
+                <a href="#/dashboard/goals" class="sidebar-link" data-route="goals">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                    <span>Goals</span>
+                </a>
+            </nav>
+
+            <!-- BOTTOM NAVIGATION -->
+            <div class="sidebar-bottom">
+                <a href="#/dashboard/settings" class="sidebar-link" data-route="settings">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+
+                <div class="user-profile-badge" id="userProfileBtn">
+                    <div class="user-avatar" id="sidebarUserAvatar">U</div>
+                    <div class="user-info-text">
+                        <span class="user-name" id="sidebarUserName">User</span>
+                        <span class="user-role">VORTEX Scholar</span>
+                    </div>
+                    <button type="button" class="logout-mini-btn" id="sidebarLogoutBtn" title="Logout">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            <polyline points="16 17 21 12 16 7"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN DASHBOARD CONTENT AREA ================= -->
+        <div class="dash-main-wrapper">
+
+            <!-- ================= TOP NAVIGATION BAR ================= -->
+            <header class="dash-topbar">
+
+                <!-- MOBILE HAMBURGER -->
+                <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <!-- BREADCRUMBS / CONTEXT -->
+                <div class="topbar-context">
+                    <span class="context-parent">VORTEX</span>
+                    <span class="context-sep">/</span>
+                    <span class="context-current" id="topbarCurrentSection">Overview</span>
+                </div>
+
+                <!-- RIGHT CONTROLS -->
+                <div class="topbar-actions">
+
+                    <!-- QUICK SEARCH CONCEPTS & GLOSSARY -->
+                    <div class="dash-search-box">
+                        <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" placeholder="Search concepts, EMI, inflation..." id="dashSearchInput">
+                    </div>
+
+                    <!-- DECISION LAB QUICK TRIGGER -->
+                    <a href="#/dashboard/decision-lab" class="btn-topbar-action" id="topbarDecisionLabBtn">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <span>Decision Lab</span>
+                    </a>
+
+                    <!-- USER PROFILE DROPDOWN TRIGGER -->
+                    <div class="profile-dropdown-wrapper">
+                        <button type="button" class="profile-pill-btn" id="topbarProfileBtn">
+                            <div class="user-avatar-sm" id="topbarUserAvatar">U</div>
+                            <span class="user-name-sm" id="topbarUserName">User</span>
+                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="profile-dropdown-menu" id="profileDropdownMenu">
+                            <div class="dropdown-header">
+                                <p class="dropdown-user-name" id="dropdownUserName">User Name</p>
+                                <p class="dropdown-user-email" id="dropdownUserEmail">user@vortex.app</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button type="button" class="dropdown-item" id="restartSetupBtn">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                                <span>Update Financial Context</span>
+                            </button>
+                            <a href="#/dashboard/settings" class="dropdown-item">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                </svg>
+                                <span>Account Settings</span>
+                            </a>
+                            <a href="#/" class="dropdown-item" id="navToLandingBtn">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span>Public Website</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <button type="button" class="dropdown-item text-danger" id="dropdownLogoutBtn">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg>
+                                <span>Log Out</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= DYNAMIC ROUTE CONTAINER ================= -->
+            <main class="dash-content-body" id="dashContentBody">
+
+                <!-- ========================================================= -->
+                <!-- 1. OVERVIEW VIEW (FINANCIAL LITERACY HUB)                  -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane active" id="view-overview">
+
+                    <!-- HERO TYPEWRITER GREETING -->
+                    <section class="dash-greeting-hero">
+                        <h1 class="greeting-typewriter-title">
+                            <span id="typewriterGreetingText"></span>
+                            <span class="typewriter-cursor">|</span>
+                        </h1>
+                        <p class="greeting-subtitle" id="greetingSubtitle">
+                            Let's make your money make more sense.
+                        </p>
+                        
+                        <!-- LITERACY STATUS PILLS -->
+                        <div class="literacy-pills-row" id="overviewLiteracyPills">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 1 & 2: CONTINUE LEARNING & TODAY'S CONCEPT -->
+                    <!-- ================================================= -->
+                    <section class="learning-hero-grid">
+
+                        <!-- 1. CONTINUE LEARNING HERO CARD -->
+                        <div class="dash-panel continue-learning-card" id="continueLearningCard">
+                            <div class="panel-badge-row">
+                                <span class="badge-tag positive">CONTINUE LEARNING</span>
+                                <span class="read-time-pill" id="activeModuleTime">⏱ 6 min read</span>
+                            </div>
+
+                            <div class="continue-content-body">
+                                <h2 class="active-module-title" id="activeModuleTitle">Understanding Credit Scores & Utilization</h2>
+                                <p class="active-module-desc" id="activeModuleDesc">
+                                    How credit bureaus calculate your risk profile, why keeping utilization below 30% boosts your rating, and how interest compounds on revolving debt.
+                                </p>
+
+                                <div class="module-progress-block">
+                                    <div class="progress-info-row">
+                                        <span class="progress-label">Course Progress</span>
+                                        <span class="progress-pct" id="activeModuleProgressPct">60%</span>
+                                    </div>
+                                    <div class="progress-track-lg">
+                                        <div class="progress-fill-lg" id="activeModuleProgressBar" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="continue-action-row">
+                                    <button type="button" class="btn-primary-action" id="btnResumeActiveLesson">
+                                        <span>Continue Reading</span>
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                    <a href="#/dashboard/learn" class="btn-text-link">Browse all 12 modules &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- UPCOMING TOPICS BAR -->
+                            <div class="upcoming-topics-row">
+                                <span class="upcoming-label">Next Up:</span>
+                                <div class="topics-tags-scroll" id="upcomingTopicsChips">
+                                    <button type="button" class="topic-chip-btn" data-lesson-id="emergency-funds">Emergency Funds</button>
+                                    <button type="button" class="topic-chip-btn" data-lesson-id="compound-interest">Compound Interest</button>
+                                    <button type="button" class="topic-chip-btn" data-lesson-id="inflation-basics">Inflation & Real Returns</button>
+                                    <button type="button" class="topic-chip-btn" data-lesson-id="budgeting-framework">50/30/20 Budgeting</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. TODAY'S FINANCIAL CONCEPT -->
+                        <div class="dash-panel today-concept-card" id="todayConceptCard">
+                            <div class="panel-badge-row">
+                                <span class="badge-tag highlight">TODAY'S CONCEPT</span>
+                                <span class="concept-date-tag" id="conceptDateTag">Daily Spotlight</span>
+                            </div>
+
+                            <div class="concept-content-body">
+                                <div class="concept-icon-wrap">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="concept-title" id="todayConceptTitle">Compound Interest</h3>
+                                <p class="concept-tagline">"Returns earning returns — the mathematical engine of wealth creation."</p>
+                                
+                                <div class="concept-explanation-box">
+                                    <p id="todayConceptExplanation">
+                                        Compound interest allows your money to earn returns on both your original principal and previously earned accumulated returns, accelerating wealth exponentially over time.
+                                    </p>
+                                </div>
+
+                                <button type="button" class="btn-secondary-action" id="btnLearnTodayConcept">
+                                    <span>Learn in 3 minutes</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 3: FINANCIAL DECISION LAB                 -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel decision-lab-showcase-section">
+                        <div class="panel-header-row">
+                            <div>
+                                <div class="panel-title-with-pill">
+                                    <h3 class="panel-title">Financial Decision Lab</h3>
+                                    <span class="badge-tag accent">Interactive Simulators</span>
+                                </div>
+                                <p class="panel-sub">Simulate real financial choices before you make them to understand total costs and trade-offs.</p>
+                            </div>
+                            <a href="#/dashboard/decision-lab" class="btn-pill-sm">Full Decision Lab &rarr;</a>
+                        </div>
+
+                        <!-- SIMULATOR TABS -->
+                        <div class="decision-tab-bar" id="overviewSimTabs">
+                            <button type="button" class="decision-tab active" data-sim="loan">Loan & EMI Trade-off</button>
+                            <button type="button" class="decision-tab" data-sim="afford">Can I Afford This?</button>
+                            <button type="button" class="decision-tab" data-sim="growth">Compound Wealth Multiplier</button>
+                            <button type="button" class="decision-tab" data-sim="inflation">Inflation Purchasing Power</button>
+                            <button type="button" class="decision-tab" data-sim="credit">Credit Card Minimum Trap</button>
+                        </div>
+
+                        <!-- SIMULATOR INTERACTIVE INTERFACE -->
+                        <div class="decision-simulator-workspace" id="overviewSimWorkspace">
+                            <!-- Injected dynamically based on active tab -->
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 4: REAL-WORLD FINANCIAL SCENARIOS         -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel scenarios-showcase-section">
+                        <div class="panel-header-row">
+                            <div>
+                                <div class="panel-title-with-pill">
+                                    <h3 class="panel-title">Real-World Financial Scenarios</h3>
+                                    <span class="badge-tag">What Would You Do?</span>
+                                </div>
+                                <p class="panel-sub">Make a decision under realistic financial conditions and immediately discover the consequences.</p>
+                            </div>
+                            <a href="#/dashboard/scenarios" class="btn-pill-sm">All Scenarios &rarr;</a>
+                        </div>
+
+                        <div class="scenarios-carousel-grid" id="overviewScenariosGrid">
+                            <!-- Injected dynamically with interactive dilemmas -->
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 5: FINANCIAL LITERACY & AWARENESS INDEX   -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel literacy-score-panel-section">
+                        <div class="panel-header-row">
+                            <div>
+                                <h3 class="panel-title">Financial Literacy & Awareness Index</h3>
+                                <p class="panel-sub">A transparent assessment of your financial understanding across 6 core pillars.</p>
+                            </div>
+                            <span class="literacy-level-badge" id="literacyLevelBadge">LEVEL 2: EXPLORER</span>
+                        </div>
+
+                        <div class="literacy-index-grid">
+                            <!-- Overall Score Gauge -->
+                            <div class="literacy-gauge-column">
+                                <div class="radial-gauge-wrapper">
+                                    <div class="gauge-center-content">
+                                        <span class="gauge-score-number" id="literacyScoreNum">68</span>
+                                        <span class="gauge-score-max">/ 100</span>
+                                    </div>
+                                    <svg class="radial-gauge-svg" viewBox="0 0 160 160">
+                                        <circle class="gauge-track" cx="80" cy="80" r="68"></circle>
+                                        <circle class="gauge-fill" id="literacyGaugeCircle" cx="80" cy="80" r="68" style="stroke-dashoffset: 136;"></circle>
+                                    </svg>
+                                </div>
+                                <p class="gauge-caption">Measured from completed modules, scenario choices & verified financial awareness.</p>
+                            </div>
+
+                            <!-- 6 Pillar Bars -->
+                            <div class="literacy-pillars-list" id="literacyPillarsContainer">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Personalized Learning Recommendation -->
+                        <div class="personalized-recommendation-box" id="personalizedRecommendationBox">
+                            <!-- Recommends specific topic based on user profile context -->
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 6: AI FINANCIAL EDUCATOR & ASSISTANT      -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel ai-explainer-section">
+                        <div class="panel-header-row">
+                            <div class="ai-section-title">
+                                <div class="ai-sparkle-icon">✨</div>
+                                <div>
+                                    <h3 class="panel-title">AI Financial Explainer & Decision Assistant</h3>
+                                    <p class="panel-sub">Ask any financial question to receive a simple, beginner-friendly conceptual breakdown.</p>
+                                </div>
+                            </div>
+                            <span class="ai-disclaimer-tag">Educational • Non-Advisory</span>
+                        </div>
+
+                        <!-- QUICK PROMPT CHIPS -->
+                        <div class="ai-quick-prompts-row" id="aiQuickPrompts">
+                            <button type="button" class="ai-prompt-chip" data-query="Explain EMI like I'm a beginner.">"Explain EMI like I'm a beginner"</button>
+                            <button type="button" class="ai-prompt-chip" data-query="Why is inflation bad for cash savings?">"Why is inflation bad for cash savings?"</button>
+                            <button type="button" class="ai-prompt-chip" data-query="What happens if I only pay the minimum credit card amount?">"What happens with minimum credit card payments?"</button>
+                            <button type="button" class="ai-prompt-chip" data-query="Explain compound interest with real numbers.">"Explain compound interest with real examples"</button>
+                        </div>
+
+                        <!-- INTERACTIVE CHAT INTERFACE -->
+                        <div class="ai-chat-box">
+                            <div class="ai-response-feed" id="aiResponseFeed">
+                                <div class="ai-msg-bubble system">
+                                    <div class="ai-avatar-badge">V</div>
+                                    <div class="ai-msg-content">
+                                        <p><strong>Welcome to VORTEX Financial Intelligence.</strong></p>
+                                        <p>Ask me to explain any financial concept, compare loan trade-offs, explain how inflation erodes purchasing power, or break down the mathematics of compound interest.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form id="aiPromptForm" class="ai-input-form">
+                                <input type="text" id="aiPromptInput" placeholder="Ask e.g. 'How does a credit score work?' or 'What is an emergency fund?'" autocomplete="off" required>
+                                <button type="submit" class="ai-send-btn" id="aiSendBtn" aria-label="Send">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 7: FINANCIAL GLOSSARY PREVIEW             -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel glossary-preview-section">
+                        <div class="panel-header-row">
+                            <div>
+                                <h3 class="panel-title">Essential Financial Glossary</h3>
+                                <p class="panel-sub">Clear definitions, real-world examples, and why each term matters to you.</p>
+                            </div>
+                            <a href="#/dashboard/glossary" class="btn-pill-sm">Explore All Terms &rarr;</a>
+                        </div>
+
+                        <div class="glossary-preview-cards" id="overviewGlossaryCards">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </section>
+
+
+                    <!-- ================================================= -->
+                    <!-- SECTION 8: PERSONAL FINANCIAL CONTEXT SUMMARY     -->
+                    <!-- ================================================= -->
+                    <section class="dash-panel financial-context-summary-section">
+                        <div class="panel-header-row">
+                            <div>
+                                <div class="panel-title-with-pill">
+                                    <h3 class="panel-title">Your Financial Context</h3>
+                                    <span class="badge-tag">Educational Baseline</span>
+                                </div>
+                                <p class="panel-sub">Your verified figures serve as the contextual foundation to personalize your learning calculations.</p>
+                            </div>
+                            <a href="#/dashboard/finances" class="btn-pill-sm">Manage Context &rarr;</a>
+                        </div>
+
+                        <div class="context-metrics-strip" id="overviewContextStrip">
+                            <!-- Populated with real user numbers with in-place edit buttons -->
+                        </div>
+                    </section>
+
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 2. FULL LEARNING PATH SUBVIEW                             -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-learn">
+                    <div class="subview-header">
+                        <h2>Structured Financial Learning Path</h2>
+                        <p>Master money through 4 progressive levels — from fundamental budgeting to advanced wealth preservation.</p>
+                    </div>
+
+                    <div class="curriculum-levels-container" id="curriculumLevelsContainer">
+                        <!-- Populated dynamically with Levels 1-4 & Interactive Lesson Launchers -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 3. FULL DECISION LAB SUBVIEW                              -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-decision-lab">
+                    <div class="subview-header">
+                        <h2>Financial Decision Laboratory</h2>
+                        <p>Simulate, evaluate, and test financial commitments before taking action in the real world.</p>
+                    </div>
+
+                    <div class="decision-lab-full-grid" id="fullDecisionLabContainer">
+                        <!-- Populated with all 6 comprehensive simulators -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 4. FULL SCENARIOS SUBVIEW                                 -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-scenarios">
+                    <div class="subview-header">
+                        <h2>Interactive Decision Scenarios</h2>
+                        <p>Real-life financial crossroads: make a choice, observe the consequences, and learn the optimal strategy.</p>
+                    </div>
+
+                    <div class="scenarios-full-grid" id="fullScenariosContainer">
+                        <!-- Populated dynamically with 6 full interactive scenarios -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 5. FULL GLOSSARY SUBVIEW                                  -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-glossary">
+                    <div class="subview-header">
+                        <h2>Financial Literacy Glossary</h2>
+                        <p>Searchable terminology explained in plain English with practical examples and why it matters.</p>
+                    </div>
+
+                    <div class="glossary-subview-wrapper">
+                        <div class="glossary-filter-bar">
+                            <input type="text" id="glossarySearchInput" class="glossary-search-input" placeholder="Search any financial term (e.g. APY, Liquidity, SIP, Mutual Fund)...">
+                            <div class="glossary-category-pills" id="glossaryCategoryFilters">
+                                <button type="button" class="gloss-cat-btn active" data-cat="all">All Terms</button>
+                                <button type="button" class="gloss-cat-btn" data-cat="credit">Credit & Debt</button>
+                                <button type="button" class="gloss-cat-btn" data-cat="investing">Investing & Growth</button>
+                                <button type="button" class="gloss-cat-btn" data-cat="banking">Banking & Cashflow</button>
+                                <button type="button" class="gloss-cat-btn" data-cat="risk">Risk & Insurance</button>
+                            </div>
+                        </div>
+
+                        <div class="glossary-cards-grid" id="fullGlossaryGrid">
+                            <!-- Populated dynamically with comprehensive dictionary -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 6. LITERACY INDEX & HEALTH SUBVIEW                        -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-health">
+                    <div class="subview-header">
+                        <h2>Financial Literacy & Preparedness Index</h2>
+                        <p>Transparent evaluation of your financial knowledge, emergency safety, debt health, and growth habits.</p>
+                    </div>
+
+                    <div class="dash-panel" id="fullLiteracyBreakdownPanel">
+                        <!-- Populated dynamically with 6 detailed pillars and learning roadmap -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 7. AI EXPLAINER SUBVIEW                                   -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-ask-ai">
+                    <div class="subview-header">
+                        <h2>AI Financial Educator</h2>
+                        <p>Clear, accessible, and structured explanations of complex financial mechanisms.</p>
+                    </div>
+
+                    <div class="dash-panel full-ai-chat-panel">
+                        <div class="ai-chat-box large">
+                            <div class="ai-response-feed" id="fullAiResponseFeed">
+                                <div class="ai-msg-bubble system">
+                                    <div class="ai-avatar-badge">V</div>
+                                    <div class="ai-msg-content">
+                                        <p><strong>VORTEX Financial Explainer</strong></p>
+                                        <p>I can help you understand financial terms, calculate total interest on a loan, compare rent vs. buy trade-offs, or explain how compounding works on your savings. What would you like to explore today?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form id="fullAiPromptForm" class="ai-input-form">
+                                <input type="text" id="fullAiPromptInput" placeholder="Ask any financial question e.g. 'What is liquidity?' or 'Why do index funds matter?'" autocomplete="off" required>
+                                <button type="submit" class="ai-send-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 8. PERSONAL FINANCIAL CONTEXT SUBVIEW                     -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-finances">
+                    <div class="subview-header">
+                        <h2>Personal Financial Context</h2>
+                        <p>Your real verified figures used as the educational baseline for personalized simulations.</p>
+                    </div>
+                    <div class="summary-metrics-grid" id="financesSubViewGrid">
+                        <!-- Populated with real user numbers with in-place edit modals -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 9. EXPENSES & LEDGER SUBVIEW (SUPPORTING FEATURE)         -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-expenses">
+                    <div class="subview-header">
+                        <h2>Expenses & Transaction Ledger</h2>
+                        <p>An optional supporting tool to understand your cashflow and categorize spending habits.</p>
+                    </div>
+                    <div class="dash-panel" id="expensesSubViewPanel">
+                        <!-- Populated with user transactions or clean empty state -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 10. GOALS SUBVIEW                                         -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-goals">
+                    <div class="subview-header">
+                        <h2>Financial Goals & Milestones</h2>
+                        <p>Set targets for emergency reserves, major purchases, or long-term growth.</p>
+                    </div>
+                    <div class="dash-panel" id="goalsSubViewPanel">
+                        <!-- Populated with user goals -->
+                    </div>
+                </div>
+
+
+                <!-- ========================================================= -->
+                <!-- 11. SETTINGS SUBVIEW                                      -->
+                <!-- ========================================================= -->
+                <div class="dash-view-pane" id="view-settings">
+                    <div class="subview-header">
+                        <h2>Account Preferences</h2>
+                        <p>Manage your profile identity, learning history, and financial context data.</p>
+                    </div>
+                    <div class="dash-panel" style="max-width: 600px;">
+                        <div class="input-group">
+                            <label>Display Name</label>
+                            <input type="text" id="settingsNameInput" value="User">
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" id="settingsEmailInput" value="user@vortex.app" readonly>
+                        </div>
+                        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                            <button type="button" class="auth-submit" id="saveSettingsBtn" style="width: auto; padding: 0.8rem 2rem;">Save Changes</button>
+                            <button type="button" class="btn-secondary" id="resetUserDataBtn" style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 50px; padding: 0.8rem 1.5rem; cursor: pointer;">Clear All Financial Data</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            INTERACTIVE LESSON READER MODAL        -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="lessonReaderModalOverlay" style="display: none;">
+        <div class="auth-box lesson-reader-box">
+            <button type="button" class="auth-close" id="lessonReaderClose">&times;</button>
+            <div class="lesson-reader-header">
+                <span class="badge-tag positive" id="readerLessonLevel">LEVEL 1</span>
+                <span class="read-time-pill" id="readerLessonTime">⏱ 6 min read</span>
+            </div>
+            <h2 class="lesson-modal-title" id="readerLessonTitle">Lesson Title</h2>
+
+            <div class="lesson-reader-body" id="readerLessonBody">
+                <!-- Rich educational content injected dynamically -->
+            </div>
+
+            <div class="lesson-quiz-section" id="readerQuizSection">
+                <!-- 2-question comprehension check -->
+            </div>
+
+            <div class="lesson-reader-footer">
+                <button type="button" class="btn-wizard-back" id="readerCloseBtn">Close</button>
+                <button type="button" class="auth-submit" id="btnMarkLessonComplete">Mark as Complete (+15 XP)</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            3-MINUTE CONCEPT EXPLAINER MODAL       -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="conceptModalOverlay" style="display: none;">
+        <div class="auth-box concept-modal-box">
+            <button type="button" class="auth-close" id="conceptModalClose">&times;</button>
+            <span class="badge-tag highlight">FINANCIAL CONCEPT</span>
+            <h2 id="conceptModalTitle" style="margin-top: 0.8rem;">Compound Interest</h2>
+            
+            <div class="concept-modal-body" id="conceptModalBody">
+                <!-- Injected dynamically -->
+            </div>
+
+            <button type="button" class="auth-submit" id="conceptModalDoneBtn" style="margin-top: 1.5rem;">Got it!</button>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            FIRST-TIME FINANCIAL SETUP WIZARD      -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="setupWizardOverlay" style="display: none;">
+        <div class="auth-box setup-wizard-box">
+            <div class="setup-progress-indicator">
+                <span class="setup-step-num" id="setupStepIndicator">Step 1 of 6</span>
+                <div class="setup-track"><div class="setup-bar" id="setupProgressBar" style="width: 16%;"></div></div>
+            </div>
+
+            <!-- STEP 1: INTRO -->
+            <div class="setup-step-view active" id="setupStep1">
+                <div class="auth-logo">VORTEX</div>
+                <h2>Let's get your finances set up.</h2>
+                <p class="auth-subtitle">Answer a few questions so VORTEX can personalize your dashboard with your real data.</p>
+                <button type="button" class="auth-submit" id="setupStep1Next">Continue</button>
+            </div>
+
+            <!-- STEP 2: BALANCE -->
+            <div class="setup-step-view" id="setupStep2">
+                <h2>What's your current balance?</h2>
+                <p class="auth-subtitle">Total liquid money in your bank accounts and cash.</p>
+                <div class="input-group">
+                    <label for="setupBalanceInput">Current Balance (₹)</label>
+                    <input type="number" id="setupBalanceInput" placeholder="e.g. 50000" min="0">
+                </div>
+                <div class="wizard-btn-row">
+                    <button type="button" class="btn-wizard-back" data-back="1">Back</button>
+                    <button type="button" class="auth-submit btn-wizard-next" data-next="3">Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 3: MONTHLY INCOME -->
+            <div class="setup-step-view" id="setupStep3">
+                <h2>What's your monthly income?</h2>
+                <p class="auth-subtitle">Your regular take-home earnings each month.</p>
+                <div class="input-group">
+                    <label for="setupIncomeInput">Monthly Income (₹)</label>
+                    <input type="number" id="setupIncomeInput" placeholder="e.g. 60000" min="0">
+                </div>
+                <div class="wizard-btn-row">
+                    <button type="button" class="btn-wizard-back" data-back="2">Back</button>
+                    <button type="button" class="auth-submit btn-wizard-next" data-next="4">Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 4: MONTHLY EXPENSES -->
+            <div class="setup-step-view" id="setupStep4">
+                <h2>How much do you typically spend each month?</h2>
+                <p class="auth-subtitle">Estimated total living costs (rent, food, bills, lifestyle).</p>
+                <div class="input-group">
+                    <label for="setupExpensesInput">Monthly Expenses (₹)</label>
+                    <input type="number" id="setupExpensesInput" placeholder="e.g. 30000" min="0">
+                </div>
+                <div class="wizard-btn-row">
+                    <button type="button" class="btn-wizard-back" data-back="3">Back</button>
+                    <button type="button" class="auth-submit btn-wizard-next" data-next="5">Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 5: SAVINGS -->
+            <div class="setup-step-view" id="setupStep5">
+                <h2>How much have you currently saved?</h2>
+                <p class="auth-subtitle">Existing savings, emergency funds, or deposits.</p>
+                <div class="input-group">
+                    <label for="setupSavingsInput">Total Savings (₹)</label>
+                    <input type="number" id="setupSavingsInput" placeholder="e.g. 25000" min="0">
+                </div>
+                <div class="wizard-btn-row">
+                    <button type="button" class="btn-wizard-back" data-back="4">Back</button>
+                    <button type="button" class="auth-submit btn-wizard-next" data-next="6">Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 6: GOALS -->
+            <div class="setup-step-view" id="setupStep6">
+                <h2>What are you saving for?</h2>
+                <p class="auth-subtitle">Add a financial goal (optional — you can always add more later).</p>
+                
+                <div class="input-group">
+                    <label for="setupGoalName">Goal Name</label>
+                    <input type="text" id="setupGoalName" placeholder="e.g. Emergency Fund, New Laptop">
+                </div>
+                <div class="input-group">
+                    <label for="setupGoalTarget">Target Amount (₹)</label>
+                    <input type="number" id="setupGoalTarget" placeholder="e.g. 100000" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="setupGoalCurrent">Amount Saved So Far (₹)</label>
+                    <input type="number" id="setupGoalCurrent" placeholder="e.g. 20000" min="0">
+                </div>
+
+                <div class="wizard-btn-row">
+                    <button type="button" class="btn-wizard-back" data-back="5">Back</button>
+                    <button type="button" class="auth-submit" id="setupFinishBtn">Finish & Go to Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            EDIT FINANCIAL METRIC MODAL / SHEET    -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="editMetricOverlay" style="display: none;">
+        <div class="auth-box edit-metric-box">
+            <button type="button" class="auth-close" id="editMetricClose">&times;</button>
+            <h2 id="editMetricTitle">Edit Metric</h2>
+            <p class="auth-subtitle" id="editMetricSub">Update your financial value</p>
+
+            <form id="editMetricForm">
+                <input type="hidden" id="editMetricKey" value="">
+                <div class="input-group">
+                    <label for="editMetricValue" id="editMetricLabel">Amount (₹)</label>
+                    <input type="number" id="editMetricValue" placeholder="Enter amount" required min="0">
+                </div>
+                <div style="display:flex; gap:0.8rem; margin-top:1.2rem;">
+                    <button type="button" class="btn-wizard-back" id="editMetricCancel" style="flex:1;">Cancel</button>
+                    <button type="submit" class="auth-submit" style="flex:1; margin-top:0;">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            ADD TRANSACTION MODAL                  -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="transactionModalOverlay" style="display: none;">
+        <div class="auth-box">
+            <button type="button" class="auth-close" id="transactionModalClose">&times;</button>
+            <h2>Add Transaction</h2>
+            <p class="auth-subtitle">Record your real-world income or spending</p>
+
+            <form id="transactionForm">
+                <div class="input-group">
+                    <label for="txDesc">Description / Merchant</label>
+                    <input type="text" id="txDesc" placeholder="e.g. Groceries, Freelance Payment" required>
+                </div>
+                <div class="input-group">
+                    <label for="txAmount">Amount (₹)</label>
+                    <input type="number" id="txAmount" placeholder="e.g. 1500" required min="1">
+                </div>
+                <div class="input-group">
+                    <label for="txType">Transaction Type</label>
+                    <select id="txType" class="select-styled" style="width:100%; padding:0.85rem; background:#111116; border:1px solid #292934; border-radius:12px; color:white; font-size:0.95rem;">
+                        <option value="expense">Expense (Outflow)</option>
+                        <option value="income">Income (Inflow)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="txCategory">Category</label>
+                    <select id="txCategory" class="select-styled" style="width:100%; padding:0.85rem; background:#111116; border:1px solid #292934; border-radius:12px; color:white; font-size:0.95rem;">
+                        <option value="Food & Dining">Food & Dining</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Bills & Utilities">Bills & Utilities</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Education">Education</option>
+                        <option value="Income">Salary / Income</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="txDate">Date</label>
+                    <input type="date" id="txDate" required>
+                </div>
+                <button type="submit" class="auth-submit">Save Transaction</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--            CREATE / EDIT GOAL MODAL               -->
+    <!-- ================================================= -->
+
+    <div class="auth-overlay" id="goalModalOverlay" style="display: none;">
+        <div class="auth-box">
+            <button type="button" class="auth-close" id="goalModalClose">&times;</button>
+            <h2>Create Financial Goal</h2>
+            <p class="auth-subtitle">Set an intentional target for your savings</p>
+
+            <form id="goalForm">
+                <div class="input-group">
+                    <label for="goalNameInput">Goal Name</label>
+                    <input type="text" id="goalNameInput" placeholder="e.g. Emergency Fund, Vacation" required>
+                </div>
+                <div class="input-group">
+                    <label for="goalTargetInput">Target Amount (₹)</label>
+                    <input type="number" id="goalTargetInput" placeholder="e.g. 50000" required min="1">
+                </div>
+                <div class="input-group">
+                    <label for="goalCurrentInput">Current Amount (₹)</label>
+                    <input type="number" id="goalCurrentInput" placeholder="e.g. 10000" required min="0">
+                </div>
+                <div class="input-group">
+                    <label for="goalDeadlineInput">Target Date (Optional)</label>
+                    <input type="month" id="goalDeadlineInput">
+                </div>
+                <button type="submit" class="auth-submit">Save Goal</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!--                    AUTH MODAL (LOGIN / SIGN UP)   -->
+    <!-- ================================================= -->
+
+    <div
+        class="auth-overlay"
+        id="authOverlay">
+
+        <div class="auth-box">
+
+            <!-- CLOSE BUTTON -->
+            <button
+                type="button"
+                class="auth-close"
+                id="authClose">
+                &times;
+            </button>
+
+            <!-- LOGIN -->
+            <div
+                class="auth-form"
+                id="loginForm">
+
+                <div class="auth-logo">
+                    VORTEX
+                </div>
+
+                <h2>Welcome Back</h2>
+                <p class="auth-subtitle">Login to access your private VORTEX Dashboard</p>
+
+                <form id="loginFormElement">
+                    <div class="input-group">
+                        <label for="loginEmail">Email</label>
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loginPassword">Password</label>
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="auth-submit">
+                        Login to Dashboard
+                    </button>
+                </form>
+
+                <p class="switch-auth">
+                    New to VORTEX?
+                    <button
+                        type="button"
+                        id="showSignup">
+                        Create an account
+                    </button>
+                </p>
+
+            </div>
+
+            <!-- SIGN UP -->
+            <div
+                class="auth-form"
+                id="signupForm">
+
+                <div class="auth-logo">
+                    VORTEX
+                </div>
+
+                <h2>Create Account</h2>
+                <p class="auth-subtitle">Start your private wealth journey with VORTEX</p>
+
+                <form id="signupFormElement">
+                    <div class="input-group">
+                        <label for="signupName">Full Name</label>
+                        <input
+                            type="text"
+                            id="signupName"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signupEmail">Email</label>
+                        <input
+                            type="email"
+                            id="signupEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signupPassword">Password</label>
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Create a password (min 6 characters)"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signupConfirmPassword">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="signupConfirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="auth-submit">
+                        Create Account & Start Setup
+                    </button>
+                </form>
+
+                <p class="switch-auth">
+                    Already have an account?
+                    <button
+                        type="button"
+                        id="showLogin">
+                        Login
+                    </button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Main VORTEX Application Script -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

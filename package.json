@@ -1,0 +1,12 @@
+{
+  "name": "vortex",
+  "version": "1.0.0",
+  "description": "VORTEX Financial Literacy Platform",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
