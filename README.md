@@ -1,4 +1,4 @@
-# VORTEX 🌪️
+# VORTEX 
 
 ### Intelligent Financial Literacy & Decision-Support Platform
 
